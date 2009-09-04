@@ -64,7 +64,7 @@ class phpbb_captcha_simplemath
 			$this->regenerate_code();
 		}
 	}
-
+	
 	/**
 	* API function
 	*/
@@ -153,7 +153,7 @@ class phpbb_captcha_simplemath
 				'CONFIRM_ID'				=> $this->confirm_id,
 				'S_CONFIRM_CODE'			=> true,
 				'S_TYPE'					=> $this->type,
-				'S_CONFIRM_REFRESH'			=> true,
+				'S_CONFIRM_REFRESH'			=> ($config['enable_confirm'] && $config['confirm_refresh'] && $this->type == CONFIRM_REG) ? true : false,
 			));
 
 			return 'captcha_simplemath.html';
