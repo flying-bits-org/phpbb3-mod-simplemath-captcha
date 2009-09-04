@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
 <!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD. Although MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD. No support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
 <mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.2.xsd">
@@ -28,39 +28,15 @@
 			<target-version>3.0.6</target-version>
 		</installation>
 
-		<history>
-			<entry>
-				<date>2009-09-04</date>
-				<rev-version>1.0.1</rev-version>
-				<changelog lang="en">
-					<change>Some language improvements</change>
-					<change>Fixed a little bug with the "Refresh"-Feature</change>
-					<change>Added subsilver2</change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2009-09-03</date>
-				<rev-version>1.0.0</rev-version>
-				<changelog lang="en">
-					<change>Initial release</change>
-				</changelog>
-			</entry>
-		</history>
-
 		<link-group>
-			<link type="language" lang="de" href="contrib/de.xml">Anleitung für das deutsche Sprachpaket</link>
-			<link type="language" lang="en" href="contrib/de.xml">Manual for German Language-set</link>
-			<link type="template" lang="de" href="contrib/subsilver2.xml">Anleitung für das Style subsilver2</link>
-			<link type="template" lang="en" href="contrib/subsilver2.xml">Manual for subsilver2 Style</link>
+			<link type="parent" lang="de" href="../install.xml">Installations-Anleitung</link>
+			<link type="parent" lang="en" href="../install.xml">Install</link>
 		</link-group>
 	</header>
 
 	<action-group>
 		<copy>
-			<file from="root/adm/style/captcha_simplemath_acp_demo.html" to="adm/style/captcha_simplemath_acp_demo.html" />
-			<file from="root/includes/captcha/plugins/phpbb_captcha_simplemath_plugin.php" to="includes/captcha/plugins/phpbb_captcha_simplemath_plugin.php" />
-			<file from="root/language/en/mods/captcha_simplemath.php" to="language/en/mods/captcha_simplemath.php" />
-			<file from="root/styles/prosilver/template/captcha_simplemath.html" to="styles/prosilver/template/captcha_simplemath.html" />
+			<file from="root/styles/subsilver2/template/captcha_simplemath.html" to="styles/subsilver2/template/captcha_simplemath.html" />
 		</copy>
 
 		<diy-instructions lang="en">Go to the Administration Control Panel > General > Board Configuration > CAPTCHA module settings. Set the SimpleMath-CAPTCHA as default.</diy-instructions>

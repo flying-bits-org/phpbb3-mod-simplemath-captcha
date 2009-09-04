@@ -140,7 +140,7 @@ class phpbb_captcha_simplemath
 	*/
 	function get_template()
 	{
-		global $template;
+		global $config, $template;
 
 		if ($this->is_solved())
 		{
@@ -254,7 +254,7 @@ class phpbb_captcha_simplemath
 		$error = '';
 		if (!$this->confirm_id)
 		{
-			$error = $user->lang['CONFIRM_SIMPLEMATH_WRONG'];
+			$error = $user->lang['SIMPLEMATH_CONFIRM_WRONG'];
 		}
 		else
 		{
@@ -265,7 +265,7 @@ class phpbb_captcha_simplemath
 			}
 			else
 			{
-				$error = $user->lang['CONFIRM_SIMPLEMATH_WRONG'];
+				$error = $user->lang['SIMPLEMATH_CONFIRM_WRONG'];
 			}
 		}
 

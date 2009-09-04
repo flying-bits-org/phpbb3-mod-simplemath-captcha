@@ -9,10 +9,11 @@
 	<dl>
 	<dt><label for="confirm_code">{SIMPLEMATH_TEMPLATE}</label></dt>
 	<dd>
-		<input type="text" tabindex="{$CAPTCHA_TAB_INDEX}" name="confirm_code" id="confirm_code" size="45"  class="inputbox autowidth" title="{L_ANSWER}" />
+		<input type="text" tabindex="{$CAPTCHA_TAB_INDEX}" name="confirm_code" id="confirm_code" size="25" class="inputbox autowidth" title="{L_ANSWER}" />
 		<input type="hidden" name="confirm_id" id="confirm_id" value="{CONFIRM_ID}" />
 		<!-- IF S_CONFIRM_REFRESH --><input type="submit" name="refresh_vc" id="refresh_vc" class="button2" value="{L_VC_REFRESH}" /><!-- ENDIF -->
 	</dd>
+	<dd>{L_SIMPLEMATH_EXPLAIN}</dd>
 	</dl>
 
 <!-- IF S_TYPE == 1 -->

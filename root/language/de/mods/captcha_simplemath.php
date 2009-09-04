@@ -38,8 +38,11 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'CAPTCHA_SIMPLEMATH'		=> 'SimpleMath CAPTCHA',
 
+	'SIMPLEMATH_CONFIRM_WRONG'	=> 'Dein Ergebnis für die Rechenaufgabe war falsch.',
+	'SIMPLEMATH_EXPLAIN'		=> 'Um die Aufgabe zu lösen, gib das numerische Ergebnis der Rechenaufgabe ein.',
 	'SIMPLEMATH_TEMPLATE'		=> '%1$s %2$s %3$s =',// Number, Operator, Number
-	'CONFIRM_SIMPLEMATH_WRONG'	=> 'Dein Ergebnis für die Rechenaufgabe war falsch.',
+
+	'VC_REFRESH'				=> 'Neue Rechenaufgabe',
 
 	'operators'	=> array(
 		/**
